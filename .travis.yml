@@ -17,7 +17,7 @@ script: "./gradlew clean build"
 before_deploy:
   - zip -r springboot-aws-webService
   - mkdir -p deploy
-  - mv springboot-aws-webService.zip deploy/springboot-aws-webService.zip
+  - mv ekkkk1-springboot-webservice.zip deploy/ekkkk1-springboot-webservice.zip
 
 deploy:
   - provider: s3
