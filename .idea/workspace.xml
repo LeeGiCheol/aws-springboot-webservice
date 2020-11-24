@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0652216-a487-41c2-901e-150446bce89d" name="Default Changelist" comment="스프링부트와 AWS로 혼자 구현하는 웹 서비스 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +275,7 @@
       <workItem from="1605970190200" duration="75000" />
       <workItem from="1605970314364" duration="95000" />
       <workItem from="1606127041651" duration="7148000" />
-      <workItem from="1606213465585" duration="4688000" />
+      <workItem from="1606213465585" duration="4990000" />
     </task>
     <task id="LOCAL-00001" summary="스프링부트와 AWS로 혼자 구현하는 웹 서비스 시작">
       <created>1605185111352</created>
