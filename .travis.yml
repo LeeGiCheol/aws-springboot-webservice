@@ -36,8 +36,8 @@ deploy:
     bucket: ekkkk1-springboot-build
     key: springboot-aws-webService.zip
     bundle_type: zip
-    application: springboot2-webservice
-    deployment_group: ekkkk1-springboot-webservice-group
+    application: test
+    deployment_group: testgroup
     region: ap-northeast-2
     wait-until-deployed: true
 
