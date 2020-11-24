@@ -34,7 +34,7 @@ deploy:
       branch: master
 
   - provider: codedeploy
-    access_key_id: $AWS_ACCESS_ID
+    access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: ekkkk1-springboot-build # S3 버킷 이름
     key: springboot-aws-webService.zip # 파일명
@@ -43,9 +43,6 @@ deploy:
     deployment_group: ekkkk1-springboot-webservice-group # CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
-    on:
-      repo: LeeGiCheol/aws-springboot-webservice
-      branch: master
 
 # CI 실행 완료 시 메일로 알람
 notifications:
