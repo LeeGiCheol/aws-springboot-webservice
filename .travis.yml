@@ -29,17 +29,23 @@ deploy:
     acl: private # zip 파일 접근을 private으로
     local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
+    on:
+      repo: LeeGiCheol/aws-springboot-webservice
+      branch: master
 
   - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY #Travis repo settings에 설정된 값
-    secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
-    bucket: ekkkk1-springboot-build
-    key: springboot-aws-webService.zip
-    bundle_type: zip
-    application: springboot2-webservice
-    deployment_group: ekkkk1-springboot-webservice-group
-    region: ap-northeast-2
-    wait-until-deployed: true
+      access_key_id: $AWS_ACCESS_ID
+      secret_access_key: $AWS_SECRET_KEY
+      bucket: ekkkk1-springboot-build # S3 버킷 이름
+      key: springboot-aws-webService.zip # 파일명
+      bundle_type: zip
+      application: springboot2-webservice # CodeDeploy 어플리케이션
+      deployment_group: ekkkk1-springboot-webservice-group # CodeDeploy 배포 그룹
+      region: ap-northeast-2
+      wait-until-deployed: true
+      on:
+        repo: LeeGiCheol/aws-springboot-webservice
+        branch: master
 
 # CI 실행 완료 시 메일로 알람
 notifications:
