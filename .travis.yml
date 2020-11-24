@@ -29,9 +29,6 @@ deploy:
     acl: private # zip 파일 접근을 private으로
     local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
-    on:
-      repo: LeeGiCheol/aws-springboot-webservice
-      branch: master
 
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
